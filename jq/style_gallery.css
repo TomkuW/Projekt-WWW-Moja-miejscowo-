@@ -1,0 +1,40 @@
+#ladowanie {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('loader.gif') no-repeat center center;
+}
+
+#zdjecie{
+	margin-bottom:20px;
+	position:align;
+}
+
+#zdjecie img{
+	max-width: 100%;
+	height:auto;
+	width:auto;
+}
+
+#miniaturki {
+	max-width:1008px;
+	min-width:350px;
+	position: relative;
+	float:left;
+}
+
+#miniaturki img {
+	margin-right: 5.0155px;
+	margin-top: 5px;
+	cursor: pointer;
+	float:left;
+	max-width:100%;
+	height:auto;
+	width:auto;
+}
+
+	
+
