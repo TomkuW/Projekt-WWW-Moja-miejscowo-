@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+	<head>
+		<title>Sokołów Małopolski</title>
+		<meta charset="UTF-8"/>
+		<meta name="description" content="Moja miejscowość - Sokołów Małopolski" />
+		<meta name="robots" content="all, index, follow"/>
+		<meta name="author" content="Tomasz Waberski"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!--Głowny kaskadowy arkusz stylów-->
+		<link rel=stylesheet href="css/style.css"/>
+		<!--Kaskadowy arkusz stylów dla galerii zdjęc-->
+		<link rel=stylesheet href="jq/style_gallery.css" />
+		
+		<!--Podłączenie dodatkowej czcionki-->
+		<link href='http://fonts.googleapis.com/css?family=Italianno&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	
+		<script>
+			var zdjecia = Array(
+		
+				Array('images/ratusz.jpg', 'images/ratusz_min.jpg', 'Sokołowski Ratusz', 'Sokołowski Ratusz "magistrat" - siedziba władz gminy. To tu urzędują władze miasteczka.'),
+
+				Array('images/uliczki.jpg', 'images/uliczki_min.jpg', 'Sokołowskie uliczki', 'Cały układ urbanistyczny starego Sokołowa z urokliwymi uliczkami o różnorodnej zabudowie został wpisany do Rejestru Zabytków.'),
+
+				Array('images/figura.jpg', 'images/figura_min.jpg', 'Pomnik w Parku', 'Park, to serce Sokołowa, na środku zobaczyć można Pomnik Wdzięczności za Odzyskaną Wolność.'),
+
+				Array('images/kosciol_parafialny.jpg', 'images/kosciol_parafialny_min.jpg', 'Koscioł Parafialny pw. św. Jana Chrzciciela', 'Kościół parafialny wybudowany w stylu neogotyckim w latach 1906-1918'),
+
+				Array('images/kosciolek.jpg', 'images/kosciolek_min.jpg', 'Koscioł pw. Ducha Świętego', 'W miasteczku znajduje się drugi filialny kościół Św. Ducha wybudowany w II połowie XIX wieku.'),
+
+				Array('images/kapliczka.jpg', 'images/kapliczka_min.jpg', 'Figura św. Józefa', 'Na obrzeżach Sokołowa znajduje się wiele bardzo interesujących XVIII-to wiecznych krzyży i figur.'),
+
+				Array('images/zespol_szkol.jpg', 'images/zespol_szkol_min.jpg', 'Zespół szkoł w Sokołowie', 'W Sokołowie Młp. znajdują się dwie szkoły. Szkoła podstawowa i gimnazjum, a druga to szkoła średnia składająca się z liceum i technikum.'),
+
+				Array('images/basen.jpg', 'images/basen_min.jpg', 'Kryta pływalnia', 'Od kilku lat w Sokołowie funkcjonuje najnowocześniejsza na Podkarpaciu kryta pływalnia. Jest ona miejscem relaksu nie tylko dla miejscowych ale także dla przyjezdnych gości.'),
+				
+				Array('images/przedszkole.jpg', 'images/przedszkole_min.jpg', 'Przedszkole samorządowe', 'Przedszkole jest miejscem gdzie swoją przygodę z nauką jak i szkołą zaczynają młodzi Sokołowianie.'),
+				
+				Array('images/orlik.jpg', 'images/orlik_min.jpg', 'Orlik - kompleks boisk', 'W Sokołowie istnieje wiele boisk i obiektów sportowych. Jednym z nich jest Orlik ze sztuczną nawierzchnia do siatkówki oraz piłki nożnej.'),
+				
+				Array('images/stadion.jpg', 'images/stadion_min.jpg', 'Stadion miejski TG "Sokół"', 'Stadion miejski jest obiektem sportowym należącym do miejscowego zespołu TG Sokół. Rozgrywane są tu mecze Klasy okręgowej.'),
+				
+				Array('images/dworzec_pks.jpg', 'images/dworzec_pks_min.jpg', 'Dworzec Główny PKS', 'Dworzec PKS w Sokołowie jest głównym dworcem komunikacji zbiorowej. Obsługiwane są tam poączenia w Kierunku Rzeszowa, Lublina, Kolbuszowej czy Leżajska.')
+				);
+
+			var max_width = 1008;
+
+			function laduj() {
+				for(var i = 0; i < zdjecia.length; i++)
+					document.getElementById('miniaturki').innerHTML += '<img src="' + zdjecia[i][1] + '" onclick="zmien(' + i + ')" />';
+				zmien(0);
+			}
+			function zmien(id) {
+			document.getElementById('zdjecie').innerHTML += '<div id="ladowanie"></div>';
+				var custom = '';
+				var preload = new Image();
+			preload.onload = function() {
+				if(preload.width > max_width) 
+					custom = ' style="height: '+(Math.floor(max_width / (preload.width / preload.height)))+'px;width:'+max_width+'px;"';
+				
+					document.getElementById('informacje').innerHTML = '<b>'+zdjecia[id][2]+'</b><br />'+zdjecia[id][3]+'</br>';
+					document.getElementById('zdjecie').innerHTML = '<img src="'+zdjecia[id][0]+'"'+custom+' />';
+				}
+					preload.src = zdjecia[id][0];
+			}
+			window.onload = laduj;
+		</script>
+	
+	</head>
+	
+	<body>
+		<div id="contener">
+			<header>
+				<div id="logo">
+					<img src="images/logo.png" alt="Herb Sokołowa">
+					<h1>Sokołów Małopolski</h1>
+					<p>Moja miejscowość - Historia i dzień dzisiejszy</p>
+				</div>
+			
+				<nav id="menu">
+					
+						<ul>
+							<li><a href="index.html">Strona główna</a></li>
+							<li><a href="o_mnie.html">O mnie</a></li>
+							<li><a href="historia.html">Historia </a></li>
+							<li><a href="http://www.sokolow-mlp.pl/e107_files/public/pol-ang.pdf">Mały przewodnik</a></li>
+							<li><a href="wydarzenia.html">Wydarzenia</a></li>
+							<li><a href="galeria.html">Galeria</a></li>
+						</ul>
+					
+					
+				</nav>
+			</header>
+			
+			<main>
+				<div id="lewyFull">
+					
+					<br/>
+					<div id="informacje"></div>
+					<div id="zdjecie"></div>
+					<div id="miniaturki"></div>
+				
+				</div>
+
+			</main>
+
+			<footer>
+				<div id="footer">
+					<p>Sokołów Małopolski 2017 - Created by Tomasz Waberski © Wszelkie prawa zastrzeżone</p>
+				</div>
+			<footer>
+			
+		</div>
+	</body>
+
+</html>

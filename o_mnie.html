@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+	<head>
+		<title>Sokołów Małopolski</title>
+		<meta charset="UTF-8"/>
+		<meta name="description" content="Moja miejscowość - Sokołów Małopolski" />
+		<meta name="robots" content="all, index, follow"/>
+		<meta name="author" content="Tomasz Waberski"/>
+		
+		<!--Głowny kaskadowy arkusz stylów-->
+		<link rel=stylesheet href="css/style.css"/>
+		<!--JS dla slidera-->
+		<script type="text/javascript" src="jq/jquery-1.7.1.min.js"></script>
+		<!--Kaskadowy arkusz stylów dla galerii-->
+		<script type="text/javascript" src="js/rvn-gallery.js"></script>
+		<!--Kaskadowy arkusz stylow dla slidera-->
+		<link rel="stylesheet" type="text/css" href="js/rvn-gallery.css" />
+
+		<!--Podłączenie dodatkowej czcionki-->
+		<link href='http://fonts.googleapis.com/css?family=Italianno&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	
+	</head>
+	
+	<body>
+		<div id="contener">
+			<header>
+				<div id="logo">
+					<img src="images/logo.png" alt="Herb Sokołowa">
+					<h1>Sokołów Małopolski</h1>
+					<p>Moja miejscowość - Historia i dzień dzisiejszy</p>
+				</div>
+			
+				<nav id="menu">
+					
+						<ul>
+							<li><a href="index.html">Strona główna</a></li>
+							<li><a href="o_mnie.html">O mnie</a></li>
+							<li><a href="historia.html">Historia </a></li>
+							<li><a href="http://www.sokolow-mlp.pl/e107_files/public/pol-ang.pdf">Mały przewodnik</a></li>
+							<li><a href="wydarzenia.html">Wydarzenia</a></li>
+							<li><a href="galeria.html">Galeria</a></li>
+						</ul>
+					
+				</nav>
+		</header>
+			
+		<main>
+			<section id="slider">
+				
+					<script>
+						$(window).load(function(){$('#gallery').rvnGallery({effect: ['randomBoxes', 'tiles', 'alphaRect'], verticalSlices: 6, horizontalSlices: 4});});
+					</script>
+					
+					<ul id="gallery" class="rvnGallery">
+						<li>
+							<img src="images/slider.jpg" alt="alternatywny podpis" />
+							<p>Zespół Szkół w Sokołowie Małopolskim</p>
+						</li>
+						<li>
+							<img src="images/plener.png" alt="alternatywny podpis" /></a>
+							<p>Kryta pływalnia Sokołów Młp.</p>
+						</li>
+						<li>
+							<img src="images/sokolowmlp.jpg" alt="alternatywny podpis" />
+							<p>Zobacz Sokołów !</p>
+						</li>
+					</ul>
+				
+			</section>
+			
+			<section id="portfolio">
+					
+					<div id="foto">
+						<img src="images/moje_foto.png" alt="Tomasz Waberski" />
+					</div>
+					<div id="omnie">
+						<h3>O mnie:</h3>
+						<p>Cześć ! Nazwywam się Tomasz Waberski, jestem studentem III roku "Informatyki i Ekonometrii". Od młodych lat interesuje się informatyką, grafiką komputerową, video montażem oraz technologiami sieciowymi. Lubię wyjazdy w miejsca znane i nieznane. Zapraszam do odwiedzenia mojej witryny.</p>
+					</div>
+			</section>
+			
+			
+			<section id="lewyFull">
+				<h2>Napisz do mnie</h2>
+				<br />
+					
+				<fieldset id="form">
+						<legend align="center">Formularz kontaktowy</legend>
+					<div id="pola">
+						<form action="mailto:wabtomek@wp.pl" method="post" enctype="text/plain">
+							<p>Podaj swoje imię:</p><input name="Imię" />
+							<p>Podaj swoje nazwisko:</p><input name="Nazwisko" />
+							<p>Podaj swoj e-mail:</p><input name="E-mail" />
+							<br />
+					</div>
+				
+						
+					<div id="wiadomosc">
+						<p>Napisz wiadomość:</p>
+						<textarea cols="40" rows="11" name="Wiadomość">Tutaj wpisz swoją wiadomość</textarea>
+						<br /><br />
+						<input type="submit" value="Wyślij" />
+					</div>
+						</form>
+				</fieldset>
+						
+				</section>
+					
+				<section id="kimjestem">
+					<h3>Kim jestem ?</h3>
+					<p>Z zawodu jestem technikiem informatykiem. Aktualnie studiuję „Informatykę z Ekonometrią” na Uniwersytecie Rzeszowskim. Jestem optymistą i realistą. Pozytywnie podchodzę do otaczającego mnie świata.</p>
+					
+					<br />
+					<p>Jeśli chcielibyście się ze mną skontaktować skorzystajcie z formularza obok lub napiszcie bezpośrednio na adres: <b><i>wabtomek@wp.pl</i></b></p>
+				</section>
+
+			</main>
+				
+			<footer id="footer">
+		
+				<p>Sokołów Małopolski 2017 - Created by Tomasz Waberski © Wszelkie prawa zastrzeżone</p>
+			
+			<footer>
+			
+		</div>
+	</body>
+
+</html>
