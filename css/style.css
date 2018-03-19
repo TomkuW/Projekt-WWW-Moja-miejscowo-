@@ -1,0 +1,259 @@
+body{
+	background-color: #004787;
+	font-family: Tahoma, Verdana, sans-serif;
+	padding:0;
+	margin:0px;
+}
+
+#contener{
+	max-width:1050px;
+	min-width:395px;
+	margin: 20px auto;
+	background-color: white;	
+}
+
+
+#logo img{
+	float:left;
+	padding: 40px 10px 5px 160px;
+	margin-left:auto;	
+}
+
+
+
+#logo h1{
+	float:left;
+	margin:0;
+	margin-bottom:5px;
+	text-align:center;
+	padding-top:40px;
+	margin-left:20px;
+	font-size: 58px;
+	color:#004787;
+	
+}
+	
+#logo p{
+	
+	float:left;
+	margin:0px;
+	margin-left:20px;
+	font-size:28px;
+	font-family:'Italianno', sans-serif;
+	text-align:justify;
+	text-align:center;
+}
+
+#menu ul{
+	float: left;
+	margin:20px;
+	margin-bottom:0px;
+	padding-left:0px;
+	list-style-type: none;
+	font-size:18px;	
+}
+
+#menu li{
+	float:left;
+	margin:;
+	margin-bottom: 20px;
+	border: 1px solid white;
+	padding: 15px 0;
+	width:166px;
+	height:20px;
+	background-color:#4E687F;
+	text-align:center;
+}
+
+#menu a{
+	margin:0px;
+	text-decoration:none;
+	color: white;
+}
+
+#slider{
+	clear:both;
+	border: 1px solid #4E687F;
+	height: 260px;
+	max-width:1010px;
+	min-width:350px;
+	margin-left:20px;
+	margin-right:20px;
+	margin-bottom:20px;
+}
+
+.lewy{
+	float:left;
+	margin-bottom:20px;
+	margin-left:20px;
+	margin-right:20px;
+	padding:5px;
+	min-width:100px;
+	max-width: 600px;
+	background-color: #white;
+	height: auto;
+	text-align: justify;
+}
+
+.lewy h2{
+	color:#004787;
+}
+
+#lewyFull{
+	float:left;
+	background-color:white;
+	min-width:100px;
+	max-width: 1050px;
+	padding-left: 20px;
+	padding-right:20px;
+	padding-bottom:	20px;
+	min-height: auto;
+	text-align:justify;
+}
+
+#lewyFull h2{
+	color:#004787;
+	margin:0px;
+}
+
+#lewyFull iframe{
+	max-width: 100%;
+	height:auto;
+	width:auto;
+	min-width:306px;
+	padding: 15px;
+	float:left;
+}
+
+#lewyFull img, i{
+	max-width: 100%;
+	height:auto;
+	width:auto;
+	 display: block;
+    margin-left: auto;
+    margin-right: auto;
+	text-align:center;
+}
+
+#portfolio{
+	float:left;
+	background-color:#E8C135;
+	min-width:100px;
+	max-width: 1050px;
+	padding: 30px 20px;
+	min-height: auto;
+}
+
+#foto{
+	float:left;
+	padding: 10px;	
+}
+
+#pola{
+	float:left;
+	height:100%;
+	width:auto;
+	padding-right:10px;
+}
+
+#wiadomosc{
+	float:left;
+	width:500px;
+	width:auto;
+}
+
+#form{
+	margin-left:auto;
+}
+
+#kimjestem{
+	padding:0 20px 0 20px;
+	margin-top:30px;
+	max-width:430px;
+	min-width:300px;
+	float:left;
+}
+
+#omnie{
+	float:left;
+	padding: 10px;
+	max-width: 819px;
+	min-width:300px;
+	font-size: 16px;
+	text-align: justify;
+	height: 100%;	
+}
+
+.prawy{	
+	float:right;
+	padding:10px 10px;
+	margin-bottom:20px;
+	margin-left:auto;
+	margin-right:20px;
+	min-width:325px;
+	max-width:324px;
+	background-color: #4E687F;
+	height:300px;
+	padding: 20px 15px;
+}
+
+.prawy h3,h4{
+	clear:both;
+	color: white;
+	text-align:center;
+	margin:0;
+	margin-bottom:10px;
+}
+
+.prawy li{
+	color:white;
+	padding-left:20px;	
+}
+
+.prawy img{
+	margin-left:20px;
+}
+
+#footer{
+	clear:both;
+	background-color:#4E687F;
+	margin:0;
+	max-width:100%;
+	height:45px;
+	width:auto;
+}
+
+#footer p{
+	margin:0;
+	padding-left:20px;
+	padding-top:15px;
+	color:black;
+	font-weight: bold;
+	font-size:12px;
+}
+
+table{
+	border:1px solid white;
+	border-collapse:collapse;
+	background-color:#4E687F;
+	color:white;
+	
+}
+
+table td{
+	border:1px solid white;
+}
+
+#gallery {
+	max-width: 1008px;
+	height: 260px;
+}
+
+
+
+
+	
+	
+
+
+	
